@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  covid19:
+    build: ./analyze_covid19
+    volumes:
+      - type: bind
+        source: ./src
+        target: /src
+
+
